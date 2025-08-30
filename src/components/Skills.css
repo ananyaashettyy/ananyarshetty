@@ -1,0 +1,111 @@
+.skills-section {
+  padding: 40px;
+  background-color: #E6F0FF;
+}
+
+.skills-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns */
+  gap: 20px;
+}
+
+.skills-column {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.skill-category-box {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 per row */
+  gap: 5px;
+  margin-top: 12px;
+}
+
+.skill-card {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;          /* make it circular */
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.skill-icon {
+  width: 60%;
+  height: 60%;
+  transition: opacity 0.3s ease;
+}
+
+.skill-name {
+  position: absolute;
+  font-size: 14px;
+  font-weight: 600;
+  color: black;
+  opacity: 0;                  /* hidden initially */
+  transition: opacity 0.3s ease;
+  text-align: center;
+  padding: 5px;
+}
+
+/* Hover effect */
+.skill-card:hover {
+  background: #d3d3d3;          /* grey background */
+}
+
+.skill-card:hover .skill-icon {
+  opacity: 0;                   /* icon disappears */
+}
+
+.skill-card:hover .skill-name {
+  opacity: 1;                   /* name appears */
+}
+/* Skills Section Background */
+.skills-section.light {
+  background-color: #e6f0ff; /* light mode */
+}
+
+.skills-section.dark {
+  background-color: #1a1a2e; /* dark mode */
+}
+
+/* Skill Cards Background */
+.skill-card.light {
+  background-color: #fff; /* light card */
+  color: #111;
+}
+
+.skill-card.dark {
+  background-color: #fff; /* dark card */
+  color: #ddd;
+}
+
+/* Skill Name Text */
+.skill-name.light {
+  color: #111;
+}
+
+.skill-name.dark {
+  color: #fff;
+}
+
+/* Hover Background */
+.skill-card.light:hover {
+  background-color: #d3d3d3; /* light hover */
+}
+
+.skill-card.dark:hover {
+  background-color: #333; /* dark hover */
+}

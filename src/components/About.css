@@ -1,0 +1,230 @@
+.about-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 60px 40px;
+  background-color: #E6F0FF;
+  gap: 40px;
+  flex-wrap: wrap;
+  min-height: 100vh; /* Full screen height */
+  overflow-x: hidden; /* No horizontal scroll */
+  position: relative;
+}
+
+.about-section::after {
+  content: "💡";
+  position: absolute;
+  right: 5%;
+  top: 15%;
+  font-size: 80px;
+  opacity: 0.05;
+  pointer-events: none;
+}
+
+.about-left,
+.about-right {
+  flex: 1 1 300px;
+  min-width: 300px;
+}
+
+/* Match Hero section typography */
+.about-section h2 {
+  font-size: 40px;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.2;
+  color: #111;
+}
+
+.about-section.dark h2 {
+  color: #f5f5f5;
+}
+
+.about-section p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.about-section.dark p {
+  color: #ddd;
+}
+
+.about-section .personal-info p {
+  font-size: 16px;
+  color: #555;
+}
+
+.about-section.dark .personal-info p {
+  color: #ccc;
+}
+
+.about-left p {
+  margin-bottom: 15px;
+}
+
+.personal-info p {
+  margin: 5px 0;
+}
+
+/* Right Column Styling */
+.about-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; /* take full width */
+}
+
+.beyond-desc {
+  font-size: 14px;
+  color: #444;
+  text-align: center;
+  max-width: 320px;
+  margin-bottom: 20px;
+}
+
+
+/* Cards Grid */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 per row */
+  gap: 4px; /* a bit more spacing between cards */
+  justify-items: center;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 20px; /* more padding inside the box */
+  border-radius: 12px;
+  width: 1000px; /* wider than before */
+  max-width: 700px; /* limits on very large screens */
+}
+
+/* Individual Cards */
+.card {
+  background-color: #fff;
+  padding: 6px; /* slightly more padding */
+  border-radius: 12px;
+  box-shadow: 0 5px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 150px; /* wider than before */
+  height: 150px; /* maintain square */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+.card .emoji {
+  font-size: 26px; /* slightly bigger emoji */
+  margin-bottom: 6px;
+}
+
+.card h3 {
+  font-size: 13px;
+  margin: 4px 0;
+  font-weight: 600;
+}
+
+.card p {
+  font-size: 11px;
+  color: #555;
+  margin: 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+  }
+
+  .card {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-section {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+  .cards {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 250px;
+    height: 130px;
+  }
+}
+
+/* Theme support for About section */
+/* Section background matching Hero */
+.about-section.light {
+  background-color: #E6F0FF; /* Hero light */
+}
+
+.about-section.dark {
+  background-color: #1a1a2e; /* Hero dark */
+}
+
+/* Text colors */
+.about-section.light h2,
+.about-section.light p,
+.about-section.light .personal-info p,
+.about-section.light .beyond-desc {
+  color: #111; /* Hero light text */
+}
+
+.about-section.dark h2 {
+  color: #f5f5f5; /* heading */
+}
+
+.about-section.dark p,
+.about-section.dark .personal-info p,
+.about-section.dark .beyond-desc {
+  color: #ddd; /* paragraph */
+}
+
+/* Cards background */
+.cards.light {
+  background: rgba(255, 255, 255, 0.5); /* light cards */
+}
+
+.cards.dark {
+  background: rgba(40, 40, 50, 0.6); /* improved dark cards */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* Individual cards */
+.card.light {
+  background-color: #fff; /* light card */
+  color: #555;
+}
+
+.card.dark {
+  background-color: #222; /* dark card */
+  color: #ddd;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.4); /* soft shadow */
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+.card.dark:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+.card.dark .emoji {
+  filter: brightness(1.2); /* makes emoji pop slightly */
+}
+
+.card.dark .external-icon {
+  color: #ccc;
+}

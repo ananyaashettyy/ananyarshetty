@@ -1,0 +1,13 @@
+.toaster-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 999;
+}
+.toast {
+  background: #007BFF;
+  color: white;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}

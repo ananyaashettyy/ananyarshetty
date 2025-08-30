@@ -1,0 +1,93 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  z-index: 1000;
+  transition: all 0.3s;
+  box-sizing: border-box; /* ensures padding doesn't cause overflow */
+  overflow-x: hidden;     /* prevent horizontal scroll */
+}
+
+.header.dark {
+  background-color: #111;
+  color: #f5f5f5;
+}
+
+.header-name {
+  font-weight: bold;
+  font-size: 22px;
+  color: black;
+}
+
+.header.dark .header-name {
+  color: #f5f5f5;
+}
+
+.header-nav {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap; /* wrap nav links on smaller screens */
+}
+
+.header-nav a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #000000;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.header-nav a:hover {
+  color: #007BFF;
+}
+
+.theme-toggle {
+  padding: 6px 12px;
+  border: 1px solid #007BFF;
+  border-radius: 6px;
+  background-color: #fff;
+  color: #007BFF;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.header.dark .theme-toggle {
+  border-color: #66b2ff;
+  color: #66b2ff;
+  background-color: #111;
+}
+
+.theme-toggle:hover {
+  background-color: #007BFF;
+  color: #fff;
+}
+
+.header.dark .theme-toggle:hover {
+  background-color: #66b2ff;
+  color: #fff;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .header {
+    padding: 15px 20px; /* reduce horizontal padding */
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .header-nav {
+    gap: 15px;
+  }
+
+  .header-name {
+    font-size: 20px;
+  }
+}

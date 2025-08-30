@@ -1,0 +1,172 @@
+/* Hero section */
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* center left and right vertically */
+  padding: 100px 80px; /* reduce top padding slightly for balance */
+  min-height: 90vh;
+  background-color: #E6F0FF;
+  transition: all 0.3s;
+  width: 100%;
+}
+
+.hero-section.dark {
+  background-color: #1a1a2e;
+}
+
+/* Left section */
+.hero-left {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical centering inside left div */
+}
+
+/* Title and subtitle */
+.hero-title {
+  font-size: 52px;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.2;
+  color: #111;
+}
+
+.hero-section.dark .hero-title {
+  color: #f5f5f5;
+}
+
+.hero-name {
+  color: #007BFF;
+}
+
+.hero-section.dark .hero-name {
+  color: #66b2ff;
+}
+
+.hero-subtitle {
+  margin-top: 12px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.hero-section.dark .hero-subtitle {
+  color: #ccc;
+}
+
+.hero-description {
+  margin-top: 25px;
+  font-size: 20px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.hero-section.dark .hero-description {
+  color: #ddd;
+}
+
+/* Buttons */
+.hero-buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 15px;
+}
+
+.hero-btn {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #007BFF;
+  background-color: #fff;
+  border: 2px solid #007BFF;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.hero-btn:hover {
+  background-color: #007BFF;
+  color: #fff;
+}
+
+.hero-section.dark .hero-btn {
+  color: #66b2ff;
+  background-color: #111;
+  border: 2px solid #66b2ff;
+}
+
+.hero-section.dark .hero-btn:hover {
+  background-color: #66b2ff;
+  color: #fff;
+}
+
+/* Social icons below buttons */
+.hero-social {
+  margin-top: 20px; /* spacing after buttons */
+  display: flex;
+  gap: 20px;
+  font-size: 24px;
+}
+
+.hero-social a {
+  color: #007BFF;
+  transition: color 0.3s;
+}
+
+.hero-section.dark .hero-social a {
+  color: #66b2ff;
+}
+
+.hero-social a:hover {
+  color: #0056b3;
+}
+
+/* Honeycomb right side */
+.hero-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.hex-row {
+  display: flex;
+  gap: 10px;
+}
+
+.hex-row.offset {
+  margin-left: 65px; /* offset for honeycomb */
+}
+
+.hex-img {
+  width: 200px;
+  height: 200px; /* taller to simulate cylinder */
+  perspective: 1000px;
+}
+
+.hex-cylinder {
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(
+    25% 0%, 75% 0%,
+    100% 50%,
+    75% 100%, 25% 100%,
+    0% 50%
+  );
+  overflow: hidden;
+  background: linear-gradient(145deg, #e6f0ff, #cce0ff);
+  box-shadow: inset 0 0 30px rgba(0,0,0,0.2), 4px 4px 15px rgba(0,0,0,0.2);
+  transform: rotateX(15deg) rotateY(5deg);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.hex-cylinder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hex-cylinder:hover {
+  transform: rotateX(0deg) rotateY(0deg) translateY(-5px);
+  box-shadow: inset 0 0 25px rgba(0,0,0,0.2), 0 10px 20px rgba(0,0,0,0.3);
+}
