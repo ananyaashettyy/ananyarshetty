@@ -44,6 +44,12 @@
   transition: color 0.3s;
 }
 
+.header.dark .header-nav a {
+  color: #ffffff !important;
+}
+
+
+
 .header-nav a:hover {
   color: #007BFF;
 }

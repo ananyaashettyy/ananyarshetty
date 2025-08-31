@@ -3,11 +3,10 @@
   justify-content: space-between;
   align-items: flex-start;
   padding: 60px 40px;
-  background-color: #E6F0FF;
   gap: 40px;
   flex-wrap: wrap;
-  min-height: 100vh; /* Full screen height */
-  overflow-x: hidden; /* No horizontal scroll */
+  min-height: 100vh;
+  overflow-x: hidden;
   position: relative;
 }
 
@@ -27,86 +26,57 @@
   min-width: 300px;
 }
 
-/* Match Hero section typography */
 .about-section h2 {
-  font-size: 40px;
+  font-size: 36px;
   font-weight: 600;
-  margin: 0;
-  line-height: 1.2;
-  color: #111;
-}
-
-.about-section.dark h2 {
-  color: #f5f5f5;
+  margin: 20px 0 10px;
 }
 
 .about-section p {
   font-size: 16px;
   line-height: 1.6;
-  color: #555;
-}
-
-.about-section.dark p {
-  color: #ddd;
-}
-
-.about-section .personal-info p {
-  font-size: 16px;
-  color: #555;
-}
-
-.about-section.dark .personal-info p {
-  color: #ccc;
 }
 
 .about-left p {
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 
-.personal-info p {
-  margin: 5px 0;
-}
-
-/* Right Column Styling */
+/* Right Column */
 .about-right {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%; /* take full width */
+  width: 100%;
 }
 
 .beyond-desc {
   font-size: 14px;
-  color: #444;
   text-align: center;
   max-width: 320px;
   margin-bottom: 20px;
 }
 
-
 /* Cards Grid */
 .cards {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 per row */
-  gap: 4px; /* a bit more spacing between cards */
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
   justify-items: center;
-  background: rgba(255, 255, 255, 0.5);
-  padding: 20px; /* more padding inside the box */
+  padding: 20px;
   border-radius: 12px;
-  width: 1000px; /* wider than before */
-  max-width: 700px; /* limits on very large screens */
+  width: 100%;
+  max-width: 700px;
 }
 
-/* Individual Cards */
 .card {
   background-color: #fff;
-  padding: 6px; /* slightly more padding */
+  padding: 12px;
   border-radius: 12px;
   box-shadow: 0 5px 12px rgba(0,0,0,0.1);
   text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
-  width: 150px; /* wider than before */
-  height: 150px; /* maintain square */
+  width: 150px;
+  height: 150px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -118,30 +88,34 @@
   box-shadow: 0 8px 18px rgba(0,0,0,0.15);
 }
 
-.card .emoji {
-  font-size: 26px; /* slightly bigger emoji */
-  margin-bottom: 6px;
-}
-
 .card h3 {
   font-size: 13px;
-  margin: 4px 0;
+  margin: 6px 0 4px;
   font-weight: 600;
 }
 
 .card p {
   font-size: 11px;
-  color: #555;
+  color: #000000;
   margin: 0;
 }
+.card p.card.dark {
+  font-size: 11px;
+  color: #fffefe;
+  margin: 0;
+}
+.external-icon {
+  margin-top: 6px;
+  font-size: 12px;
+  color: #555;
+}
 
-/* Responsive Adjustments */
+/* Responsive */
 @media (max-width: 1024px) {
   .cards {
     grid-template-columns: repeat(2, 1fr);
     width: 90%;
   }
-
   .card {
     width: 120px;
     height: 120px;
@@ -157,7 +131,6 @@
     grid-template-columns: 1fr;
     width: 100%;
   }
-
   .card {
     width: 100%;
     max-width: 250px;
@@ -165,55 +138,34 @@
   }
 }
 
-/* Theme support for About section */
-/* Section background matching Hero */
+/* Theme Support */
 .about-section.light {
-  background-color: #E6F0FF; /* Hero light */
+  background-color: #E6F0FF;
+  color: #111;
 }
 
 .about-section.dark {
-  background-color: #1a1a2e; /* Hero dark */
+  background-color: #1a1a2e;
+  color: #f5f5f5;
 }
 
-/* Text colors */
-.about-section.light h2,
-.about-section.light p,
-.about-section.light .personal-info p,
-.about-section.light .beyond-desc {
-  color: #111; /* Hero light text */
-}
-
-.about-section.dark h2 {
-  color: #f5f5f5; /* heading */
-}
-
-.about-section.dark p,
-.about-section.dark .personal-info p,
-.about-section.dark .beyond-desc {
-  color: #ddd; /* paragraph */
-}
-
-/* Cards background */
 .cards.light {
-  background: rgba(255, 255, 255, 0.5); /* light cards */
+  background: rgba(255, 255, 255, 0.5);
 }
 
 .cards.dark {
-  background: rgba(40, 40, 50, 0.6); /* improved dark cards */
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  background: rgba(40, 40, 50, 0.6);
 }
 
-/* Individual cards */
 .card.light {
-  background-color: #fff; /* light card */
+  background-color: #fff;
   color: #555;
 }
 
 .card.dark {
-  background-color: #222; /* dark card */
-  color: #ddd;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.4); /* soft shadow */
-  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+  background-color: #222;
+  color: #ffffff;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.4);
 }
 
 .card.dark:hover {
@@ -221,10 +173,32 @@
   box-shadow: 0 8px 20px rgba(0,0,0,0.5);
 }
 
-.card.dark .emoji {
-  filter: brightness(1.2); /* makes emoji pop slightly */
+.main-heading {
+  text-align: center;
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  color: #000000;
+  margin-bottom: 40px;
 }
 
-.card.dark .external-icon {
-  color: #ccc;
+.about-section.dark .main-heading {
+  color: #ffffff;
+}
+.heading-container {
+  width: 100%;
+}
+.timeline-title {
+  font-weight: 700; /* Bold */
+}
+.languages ul {
+  list-style-type: disc; /* default bullet points */
+  padding-left: 20px;
+  margin: 10px 0;
+}
+
+.languages li {
+  margin-bottom: 6px;
+  font-size: 16px;
+  line-height: 1.5;
 }
