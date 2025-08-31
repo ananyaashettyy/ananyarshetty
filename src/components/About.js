@@ -86,7 +86,7 @@ const About = () => {
     </div>
 
       <div className="about-left">
-        <h2>Education</h2>
+        <h3>Education</h3>
         <div className="education">
         {educationData.map((edu, index) => (
   <div key={index} className="timeline-item">
@@ -97,7 +97,7 @@ const About = () => {
 
         </div>
 
-       <h2>Experience</h2>
+       <h3>Experience</h3>
 <div className="experience">
   {experienceData.map((exp, index) => (
     <div key={index} className="timeline-item">
@@ -109,7 +109,7 @@ const About = () => {
 </div>
 
 
- <h2>Languages</h2>
+ <h3>Languages</h3>
         <div className="languages">
           <ul>
             {languagesData.map((lang, index) => {
@@ -126,7 +126,7 @@ const About = () => {
 
 
       <div className="about-right">
-        <h2>Beyond Code</h2>
+        <h3>Beyond Code</h3>
         <p className="beyond-desc">
           Here's a glimpse of hobbies, passions, and interests that keep me inspired...
         </p>
