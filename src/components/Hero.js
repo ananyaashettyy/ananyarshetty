@@ -17,7 +17,7 @@ import photo10 from "../assets/photo10.jpg";
 import photo11 from "../assets/photo11.jpg";
 import photo12 from "../assets/photo12.jpg";
 
-const resumeLink = "https://drive.google.com/uc?export=download&id=1trHt_gREZidvF2OYnkkcOMJvatC5TIn-";
+const resumeLink = "https://drive.google.com/file/d/1Z1jizgKyWhbaaQ5tKuJraka70FShJF8b/view?usp=sharing";
 
 const images = [photo1, photo2, photo3, photo4, photo5, photo6, photo7, photo8, photo9, photo10, photo11, photo12];
 
@@ -40,7 +40,7 @@ const Hero = () => {
         <p className="hero-subtitle">Software Developer & AI Enthusiast</p>
         <p className="hero-description">
           4th Year Information Science Student passionate about building innovative solutions
-          with cutting-edge technologies and artificial intelligence.
+          with cutting-edge technologies and artificial Intelligence.
         </p>
 
         <div className="hero-buttons">

@@ -10,6 +10,7 @@ import {
 import { useTheme } from "../contexts/ThemeContext";
 import "./About.css";
 
+// Beyond Code skills/hobbies
 const skills = [
   {
     icon: <FaCode />,
@@ -20,7 +21,7 @@ const skills = [
   {
     icon: <FaGithub />,
     title: "Open Source Contributor",
-    desc: "GitHub, Commun Contributions",
+    desc: "GitHub, Community Contributions",
     link: "https://github.com/ananyaashettyy/",
   },
   {
@@ -43,6 +44,7 @@ const skills = [
   },
 ];
 
+// Education data
 const educationData = [
   {
     institution: "Sahyadri College Of Engineering And Management [2026]",
@@ -58,16 +60,16 @@ const educationData = [
   },
 ];
 
-
-  const experienceData = [
+// Experience data
+const experienceData = [
   {
     role: "React Developer Intern",
     company: "Incture Technologies",
-    duration: "Jun 2024 – Aug 2024"
+    duration: "Jun 2024 – Aug 2024",
   },
 ];
 
-
+// Languages data
 const languagesData = [
   "English (Professional Working Proficiency)",
   "Hindi (Professional Working Proficiency)",
@@ -79,52 +81,54 @@ const About = () => {
   const { isDark } = useTheme();
 
   return (
-   <section className={`about-section ${isDark ? "dark" : "light"}`} id="about">
-  {/* Main Heading */}
-  <div className="heading-container">
-    <h1 className="main-heading">About Me</h1>
-    </div>
+    <section className={`about-section ${isDark ? "dark" : "light"}`} id="about">
+      <div className="heading-container">
+        <h1 className="main-heading">About Me</h1>
+      </div>
 
+      {/* LEFT SIDE */}
       <div className="about-left">
-        <h3>Education</h3>
-        <div className="education">
-        {educationData.map((edu, index) => (
-  <div key={index} className="timeline-item">
-    <p className="timeline-title"><strong>{edu.institution}</strong></p>
-    <p className="timeline-content">{edu.degree}</p>
-  </div>
-))}
-
+        {/* ---- Education ---- */}
+        <div className="info-section">
+          <h3>Education</h3>
+          <div className="info-cards">
+            {educationData.map((edu, idx) => (
+              <div key={idx} className={`info-card ${isDark ? "dark" : "light"}`}>
+                <p><span>{edu.institution}</span></p>
+                <p>{edu.degree}</p>
+              </div>
+            ))}
+          </div>
         </div>
 
-       <h3>Experience</h3>
-<div className="experience">
-  {experienceData.map((exp, index) => (
-    <div key={index} className="timeline-item">
-      <p className="timeline-title">
-        <strong>{exp.role}</strong> – {exp.company} [{exp.duration}]
-      </p>
-    </div>
-  ))}
-</div>
+        {/* ---- Experience ---- */}
+        <div className="info-section">
+          <h3>Experience</h3>
+          <div className="info-cards">
+            {experienceData.map((exp, idx) => (
+              <div key={idx} className={`info-card ${isDark ? "dark" : "light"}`}>
+                <p><span>{exp.role}</span></p>
+                <p>{exp.company}</p>
+                <p>{exp.duration}</p>
+              </div>
+            ))}
+          </div>
+        </div>
 
-
- <h3>Languages</h3>
-        <div className="languages">
-          <ul>
-            {languagesData.map((lang, index) => {
-              const match = lang.match(/^(.+?)\s*\((.+)\)$/); // Split name and proficiency
-              return (
-                <li key={index}>
-                  <strong>{match ? match[1] : lang}</strong> {match ? `(${match[2]})` : ""}
-                </li>
-              );
-            })}
-          </ul>
+        {/* ---- Languages ---- */}
+        <div className="info-section">
+          <h3>Languages</h3>
+          <div className="info-cards">
+            {languagesData.map((lang, idx) => (
+              <div key={idx} className={`info-card ${isDark ? "dark" : "light"}`}>
+                <p>{lang}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
 
-
+      {/* RIGHT SIDE */}
       <div className="about-right">
         <h3>Beyond Code</h3>
         <p className="beyond-desc">

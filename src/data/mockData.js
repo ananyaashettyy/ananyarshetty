@@ -2,6 +2,7 @@
 import FlavorsOfCoast from "../assets/Projects/flavors-of-coast.png";
 import CleanSkinCompass from "../assets/Projects/clearskin-compass.png";
 import NetworkMonitoringDashboard from "../assets/Projects/Network-Monitoring-Dashboard.png"
+import TextToHandwriting from "../assets/Projects/text-to-handwriting.png"
 
 export const mockProjects = [
   {
@@ -59,58 +60,21 @@ export const mockProjects = [
     ],
     details: "This project demonstrates a practical network monitoring tool built with Next.js. Users can monitor multiple websites, view detailed metrics like latency, HTTP status codes, and response size, and track trends over time via dynamic charts. The project uses Vercel serverless API routes, making it fully deployable online and ideal for showcasing real-time web application skills."
 },
-  {
-    id: 4,
-    title: "AI-Powered Code Assistant",
-    description: "Intelligent code completion and review tool using machine learning to help developers write better code faster.",
-    image: "https://images.unsplash.com/photo-1587560699334-cc4ff634909a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-    technologies: ["Python", "OpenAI API", "React", "Flask", "PostgreSQL"],
-    github: "https://github.com/prerakraja/ai-code-assistant",
-    demo: "https://ai-code-assistant-demo.herokuapp.com",
-    duration: "3 months",
-    features: [
-      "Real-time code suggestions and completions",
-      "Code quality analysis and recommendations",
-      "Multi-language support (Python, JavaScript, Java)",
-      "Integration with popular IDEs",
-      "Learning from user coding patterns"
-    ],
-    details: "An innovative tool that leverages AI to enhance developer productivity. The system analyzes code patterns, suggests improvements, and provides intelligent completions. This project showcases my expertise in AI integration, backend development, and creating tools that solve real developer pain points."
-  },
-  {
-    id: 5,
-    title: "Smart University Dashboard",
-    description: "Comprehensive student management system with grade tracking, course planning, and academic progress visualization.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-    technologies: ["React", "Node.js", "MongoDB", "Chart.js", "Express"],
-    github: "https://github.com/prerakraja/university-dashboard",
-    demo: "https://university-dashboard-demo.netlify.app",
-    duration: "4 months",
-    features: [
-      "Grade tracking and GPA calculation",
-      "Course schedule management",
-      "Academic progress visualization",
-      "Assignment deadline reminders",
-      "Study group formation tools"
-    ],
-    details: "Built specifically for university students to manage their academic journey more effectively. The dashboard provides comprehensive tools for tracking grades, managing schedules, and visualizing academic progress. This project demonstrates my ability to understand user needs and create practical solutions for educational environments."
-  },
-  {
-    id: 6,
-    title: "Community Recipe Sharing App",
-    description: "Mobile-first recipe sharing platform where cooking enthusiasts can discover, share, and rate culinary creations.",
-    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-    technologies: ["Flutter", "Firebase", "Dart", "Cloud Functions", "Storage"],
-    github: "https://github.com/prerakraja/recipe-sharing-app",
-    demo: "https://play.google.com/store/apps/recipe-sharing-demo",
-    duration: "3 months",
-    features: [
-      "User-generated recipe content",
-      "Photo sharing and editing tools",
-      "Rating and review system",
-      "Social features and following",
-      "Offline recipe access"
-    ],
-    details: "A mobile application that brings together my passion for cooking and mobile development skills. Users can share recipes with photos, rate dishes, and discover new culinary adventures. The app includes social features that build a community around shared cooking experiences, demonstrating my understanding of both technical implementation and user engagement."
-  }
+{
+  id: 4,
+  title: "Text-to-Handwriting Web App",
+  description: "A web application that converts typed or pasted text into customizable handwritten-style output with font selection, colors, spacing, paper backgrounds, and downloadable formats.",
+  image: TextToHandwriting,
+  technologies: ["HTML", "CSS", "JavaScript", "html2canvas", "jsPDF", "Google Fonts"],
+  github: "https://github.com/ananyaashettyy/text-to-handwriting",
+  demo: "https://text-to-handwriting-delta.vercel.app/",
+  features: [
+    "Multiple handwriting fonts and custom font upload",
+    "Font size, ink color, line spacing, letter spacing, and shadow effects",
+    "Upload paper backgrounds and select page size",
+    "Real-time handwriting preview",
+    "Download output as PNG, JPG"
+  ],
+  details: "A full-featured Text-to-Handwriting web app built with HTML, CSS, and JavaScript. It allows users to generate realistic handwritten text with customizable styling options, paper backgrounds, and multiple download formats. This project highlights expertise in frontend development, DOM manipulation, and working with libraries like html2canvas and jsPDF."
+}
 ];
