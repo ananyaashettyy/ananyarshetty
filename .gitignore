@@ -1,0 +1,23 @@
+<<<<<<< HEAD
+# your local .gitignore content
+/node_modules
+/.next/
+=======
+# remote .gitignore content
+.pnp.js
+.pnp.*
+.yarn/*
+>>>>>>> e435fbf
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# next.js
+/.next/

@@ -1,0 +1,211 @@
+.projects-section.light {
+  background-color: #e6f0ff;
+  padding: 40px 20px;
+}
+
+.projects-section.dark {
+  background-color: #1a1a2e;
+  padding: 40px 20px;
+}
+
+
+/* =========================
+   Projects Grid Layout
+   ========================= */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 15px;
+  border-radius: 8px;
+  height: 100%;
+  transition: box-shadow 0.3s, background-color 0.3s;
+  border: 1px solid #ddd;
+}
+
+.project-card:hover {
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+/* Light + Dark Card Backgrounds */
+.project-card.light {
+  background-color: #fff;
+  color: #111;
+}
+
+.project-card.dark {
+  background-color: #222;
+  color: #ddd;
+  border: 1px solid #444;
+}
+
+/* =========================
+   Project Image Container
+   ========================= */
+.img-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.project-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+/* =========================
+   Overlay Buttons
+   ========================= */
+/* Left bottom (Details) */
+.overlay-btn.overlay-left {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: rgba(0,0,0,0.6);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: none;
+  opacity: 0;
+  transition: opacity 0.3s ease, background-color 0.3s;
+}
+
+.img-container:hover .overlay-btn.overlay-left {
+  opacity: 1;
+}
+
+/* Right bottom (GitHub + Demo) */
+.overlay-right {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  gap: 5px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.img-container:hover .overlay-right {
+  opacity: 1;
+}
+
+.overlay-btn.github-btn,
+.overlay-btn.demo-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0,0.6);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.overlay-btn.github-btn:hover,
+.overlay-btn.demo-btn:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* =========================
+   Text Content
+   ========================= */
+/* Light Theme */
+.project-card.light h3 {
+  color: #111; /* black for light */
+}
+
+/* Dark Theme */
+.project-card.dark h3 {
+  color: #fff; /* white for dark */
+}
+
+.project-card h3 {
+  margin: 10px 0 5px 0;
+}
+
+.project-card p {
+  font-size: 14px;
+  margin: 0 0 10px 0;
+}
+
+/* =========================
+   Tech Badges
+   ========================= */
+.tech-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.tech-badge.light {
+  background-color: #e6f0ff;
+  color: #1509ef;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.tech-badge.dark {
+  background-color: #1206f1;
+  color: #e6f0ff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+/* =========================
+   Bottom View Details Button
+   ========================= */
+.card-bottom-btn {
+  margin-top: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.view-btn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: rgba(0,0,0,0.0);
+  color: #0056b3;
+  transition: background-color 0.3s ease;
+}
+
+.view-btn:hover {
+  background-color: #0056b3;
+  color: #fff;
+}
+
+.more-btn {
+  background: transparent;
+  border: none;
+  color: #0056b3;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 2px 4px;
+  transition: color 0.3s ease;
+}
+
+.more-btn:hover {
+  color: #003d80;
+}
+

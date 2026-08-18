@@ -1,0 +1,113 @@
+.experience-logo {
+  width: 100%;
+  height: 140px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #e8f4f8, #f0f4ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-bottom: 12px;
+  object-fit: contain;
+  padding: 12px;
+  border: 1px solid rgba(0,0,0,0.08);
+}
+
+.experience-logo-placeholder {
+  width: 100%;
+  height: 140px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #e8f4f8, #f0f4ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-bottom: 12px;
+  color: #2f2f2f;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: 1px solid rgba(0,0,0,0.08);
+  font-size: 13px;
+  text-align: center;
+  padding: 12px;
+}
+
+.experience-card h3 {
+  margin: 0 0 6px 0;
+  color: inherit;
+  font-size: 16px;
+}
+
+.company-name {
+  margin: 0 0 6px 0;
+  font-weight: 700;
+  font-size: 14px;
+  color: #1509ef;
+}
+
+.location {
+  font-size: 12px;
+  margin: 0 0 6px 0;
+  color: rgba(0,0,0,0.7);
+}
+
+.experience-duration {
+  font-size: 12px;
+  margin: 0 0 12px 0;
+  font-weight: 600;
+  color: rgba(0,0,0,0.6);
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0 0 12px 0;
+}
+
+.tech-tag {
+  display: inline-block;
+  padding: 4px 10px;
+  background-color: #f0f4ff;
+  color: #1509ef;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 600;
+  border: 1px solid #dde7ff;
+}
+
+.experience-footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: rgba(0,0,0,0.7);
+}
+
+.project-card.dark .experience-logo,
+.project-card.dark .experience-logo-placeholder {
+  background: linear-gradient(135deg, #2a3a4a, #1a2a3a);
+  color: #ddd;
+}
+
+.project-card.dark .company-name {
+  color: #66b2ff;
+}
+
+.project-card.dark .location,
+.project-card.dark .experience-duration {
+  color: #aaa;
+}
+
+.project-card.dark .tech-tag {
+  background-color: #2a3a4a;
+  color: #66b2ff;
+  border-color: #3a4a5a;
+}
+
+.project-card.dark .experience-footer {
+  color: #aaa;
+}

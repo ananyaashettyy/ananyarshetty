@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/static/css/main.93cd2c92.css",
+    "main.js": "/static/js/main.7b40205f.js",
+    "static/media/photo8.jpg": "/static/media/photo8.61fe852a543e5ab3d3e7.jpg",
+    "static/media/photo5.jpg": "/static/media/photo5.941b23e3be7c397ad011.jpg",
+    "static/media/photo4.jpg": "/static/media/photo4.fe67c109dc0ef3766c57.jpg",
+    "static/media/photo1.jpg": "/static/media/photo1.69fd86f7f28550753b3a.jpg",
+    "static/media/photo12.jpg": "/static/media/photo12.65a98ba737edb2ebd701.jpg",
+    "static/media/photo10.jpg": "/static/media/photo10.2fb5c94e4acc7f205a54.jpg",
+    "static/media/Ananyarshetty-resume.pdf": "/static/media/Ananyarshetty-resume.767f2600c100265d81d3.pdf",
+    "static/media/photo2.jpg": "/static/media/photo2.55d8a302dc063f91b100.jpg",
+    "static/media/photo3.jpg": "/static/media/photo3.1feca61e613b06e5e9db.jpg",
+    "static/media/photo6.jpg": "/static/media/photo6.788a6313981f2c20f2fd.jpg",
+    "static/media/flavors-of-coast.png": "/static/media/flavors-of-coast.ac815f3a71b10ae13bb4.png",
+    "static/media/paper.jpg": "/static/media/paper.52388011bc74376575e1.jpg",
+    "static/media/clearskin-compass.png": "/static/media/clearskin-compass.c108ecdca476571fe3c6.png",
+    "static/media/conf1.jpg": "/static/media/conf1.bcd1c6b3f50c5f8463a5.jpg",
+    "static/media/photo7.jpg": "/static/media/photo7.8c4ef19f03be1f40d5cf.jpg",
+    "static/media/conf2.jpg": "/static/media/conf2.7394167289794c2b3398.jpg",
+    "static/media/Network-Monitoring-Dashboard.png": "/static/media/Network-Monitoring-Dashboard.3600ddea2acf47276d0a.png",
+    "static/media/photo11.jpg": "/static/media/photo11.df08e0b005ce6d238ae5.jpg",
+    "static/media/photo9.jpg": "/static/media/photo9.780767d8992e6a3a778c.jpg",
+    "static/media/text-to-handwriting.png": "/static/media/text-to-handwriting.20b26b6d60d71b70e065.png",
+    "static/media/Cognizant.png": "/static/media/Cognizant.0939a4a9411ed0f37d63.png",
+    "static/media/vertex-ai.svg": "/static/media/vertex-ai.bf7de788abc51d16e806cc339af50d65.svg",
+    "index.html": "/index.html",
+    "main.93cd2c92.css.map": "/static/css/main.93cd2c92.css.map",
+    "main.7b40205f.js.map": "/static/js/main.7b40205f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.93cd2c92.css",
+    "static/js/main.7b40205f.js"
+  ]
+}

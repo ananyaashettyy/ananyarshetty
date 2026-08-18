@@ -1,0 +1,121 @@
+.projects-section.light {
+  background-color: #e6f0ff;
+  padding: 40px 20px;
+}
+
+.projects-section.dark {
+  background-color: #1a1a2e;
+  padding: 40px 20px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 15px;
+  border-radius: 8px;
+  height: 100%;
+  transition: box-shadow 0.3s, background-color 0.3s;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.project-card.light {
+  background-color: #fff;
+  color: #111;
+}
+
+.project-card.dark {
+  background-color: #222;
+  color: #ddd;
+  border: 1px solid #444;
+}
+
+.achievement-image-box {
+  width: 100%;
+  height: 180px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #f5d9a8, #f1f0ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-bottom: 12px;
+  color: #2f2f2f;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: 1px solid rgba(0,0,0,0.08);
+  object-fit: cover;
+}
+
+.achievement-link {
+  display: inline-block;
+  margin: 0 0 10px 0;
+  color: #0056b3;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.achievement-link:hover {
+  text-decoration: underline;
+}
+
+.achievement-card h3 {
+  margin: 0 0 6px 0;
+  color: inherit;
+}
+
+.achievement-tag {
+  margin: 0 0 10px 0;
+  font-weight: 700;
+  font-size: 13px;
+  color: #1509ef;
+}
+
+.achievement-description {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0 0 12px 0;
+}
+
+.achievement-footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: rgba(0,0,0,0.7);
+}
+
+.achievement-footer .view-btn {
+  background: transparent;
+  border: none;
+  color: #0056b3;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0;
+}
+
+.achievement-card.dark .achievement-tag {
+  color: #b7d7ff;
+}
+
+.achievement-card.dark .achievement-footer {
+  color: rgba(255,255,255,0.75);
+}
+
+.achievement-card.dark .achievement-footer .view-btn {
+  color: #9fd0ff;
+}
