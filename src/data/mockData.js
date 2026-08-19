@@ -5,6 +5,7 @@ import NetworkMonitoringDashboard from "../assets/Projects/Network-Monitoring-Da
 import TextToHandwriting from "../assets/Projects/text-to-handwriting.png"
 import PaperImage from "../components/ui/Achievements/paper.jpg";
 import AIOpsPlatform from "../assets/Projects/AI-Powered IT Operations & Monitoring Platform.png";
+import BookReader from "../assets/Projects/bookReader-AI.png";
 import ConferenceImage1 from "../components/ui/Achievements/conf1.jpg";
 import ConferenceImage2 from "../components/ui/Achievements/conf2.jpg";
 import InctureLogo from "../components/Experience/incture.png";
@@ -116,6 +117,27 @@ export const mockProjects = [
   ],
   details:
     "An intelligent IT Operations and AIOps platform built to monitor infrastructure health and assist with incident detection and analysis. The platform uses Python and psutil for system monitoring, FastAPI for REST APIs, MySQL for telemetry and incident persistence, and React.js for the monitoring dashboard. Machine-learning-based anomaly detection using Isolation Forest helps identify unusual infrastructure behavior. The project is designed to evolve toward Generative AI, cloud monitoring, ITSM integrations, and automated remediation."
+},
+{
+  id: 6,
+  title: "BookReader AI",
+  description: "An AI-powered multilingual conversational PDF reader that transforms uploaded books into interactive, voice-enabled reading experiences.",
+  image: BookReader,
+  technologies: ["React.js", "Python", "FastAPI", "MySQL", "PyMuPDF", "PDF.js", "RAG", "LLM", "Embeddings", "Speech Recognition", "Text-to-Speech"],
+  github: "https://github.com/ananyaashettyy/BookReader-AI",
+  demo: "",
+  features: [
+    "Upload PDF books with automatic text extraction and cover detection",
+    "Interactive single-page, two-page, and split reader modes",
+    "Continuous text-to-speech narration with sentence-level highlighting",
+    "Natural voice commands for reading, navigation, bookmarks, and summaries",
+    "Multilingual reading, translation, and voice selection",
+    "RAG-based book question answering with spoiler protection",
+    "Chapter and part detection with AI summaries",
+    "Bookmarks, notes, reading statistics, and persistent progress"
+  ],
+  details:
+    "BookReader AI is a full-stack conversational PDF reading platform built with React.js and FastAPI. It processes uploaded books with PyMuPDF and PDF.js, extracts covers and text, detects chapters and parts, and presents pages in an interactive reader. The application combines synchronized text-to-speech, sentence highlighting, voice intent recognition, multilingual translation, and RAG-based question answering so readers can listen to, explore, and understand their books. It also supports spoiler-aware answers, summaries, bookmarks, notes, reading statistics, and resume-from-last-position functionality."
 },
 ];
 

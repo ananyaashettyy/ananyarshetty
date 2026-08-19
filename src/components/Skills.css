@@ -86,6 +86,10 @@
   color: #000;
 }
 
+.skills-section.dark .skill-category-box h3 {
+  color: #000;
+}
+
 /* Skill Cards Background */
 .skill-card.light {
   background-color: #fff; /* light card */

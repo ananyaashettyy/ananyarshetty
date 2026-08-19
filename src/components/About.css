@@ -242,6 +242,11 @@
   box-shadow: 0 5px 15px rgba(0,0,0,0.4);
 }
 
+.card.dark h3,
+.card.dark p {
+  color: #ffffff;
+}
+
 .card.dark:hover, .info-card.dark:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 20px rgba(0,0,0,0.5);
