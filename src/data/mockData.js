@@ -5,7 +5,7 @@ import NetworkMonitoringDashboard from "../assets/Projects/Network-Monitoring-Da
 import TextToHandwriting from "../assets/Projects/text-to-handwriting.png"
 import PaperImage from "../components/ui/Achievements/paper.jpg";
 import AIOpsPlatform from "../assets/Projects/AI-Powered IT Operations & Monitoring Platform.png";
-import BookReader from "../assets/Projects/bookReader-AI.png";
+import BookReader from "../assets/Projects/BookReader-AI.png";
 import ConferenceImage1 from "../components/ui/Achievements/conf1.jpg";
 import ConferenceImage2 from "../components/ui/Achievements/conf2.jpg";
 import InctureLogo from "../components/Experience/incture.png";

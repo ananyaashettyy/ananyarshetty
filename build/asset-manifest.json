@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.b26c0fa8.css",
-    "main.js": "/static/js/main.1f13b6cf.js",
+    "main.js": "/static/js/main.6eab7800.js",
     "static/media/photo8.jpg": "/static/media/photo8.61fe852a543e5ab3d3e7.jpg",
     "static/media/photo5.jpg": "/static/media/photo5.941b23e3be7c397ad011.jpg",
     "static/media/photo4.jpg": "/static/media/photo4.fe67c109dc0ef3766c57.jpg",
@@ -22,16 +22,16 @@
     "static/media/photo11.jpg": "/static/media/photo11.df08e0b005ce6d238ae5.jpg",
     "static/media/photo9.jpg": "/static/media/photo9.780767d8992e6a3a778c.jpg",
     "static/media/AI-Powered IT Operations & Monitoring Platform.png": "/static/media/AI-Powered IT Operations & Monitoring Platform.9231a9ed945922ff8dc9.png",
-    "static/media/bookReader-AI.png": "/static/media/bookReader-AI.109b886c8a61636a6095.png",
+    "static/media/BookReader-AI.png": "/static/media/BookReader-AI.109b886c8a61636a6095.png",
     "static/media/text-to-handwriting.png": "/static/media/text-to-handwriting.20b26b6d60d71b70e065.png",
     "static/media/Cognizant.png": "/static/media/Cognizant.0939a4a9411ed0f37d63.png",
     "static/media/vertex-ai.svg": "/static/media/vertex-ai.bf7de788abc51d16e806cc339af50d65.svg",
     "index.html": "/index.html",
     "main.b26c0fa8.css.map": "/static/css/main.b26c0fa8.css.map",
-    "main.1f13b6cf.js.map": "/static/js/main.1f13b6cf.js.map"
+    "main.6eab7800.js.map": "/static/js/main.6eab7800.js.map"
   },
   "entrypoints": [
     "static/css/main.b26c0fa8.css",
-    "static/js/main.1f13b6cf.js"
+    "static/js/main.6eab7800.js"
   ]
 }
